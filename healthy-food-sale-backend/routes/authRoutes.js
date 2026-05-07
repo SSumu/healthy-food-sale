@@ -1,20 +1,20 @@
 import express from "express";
-import { login, register } from "../controllers/authController";
+import { login, register } from "../controllers/authController.js";
 
-const router = express.Router();
+const authRoutes = express.Router();
 
 /**
  * @route   POST /api/auth/register
  * @desc    Register a new admin user
  * @access  Public (you can later restrict this)
  */
-router.post("/register", register);
+authRoutes.post("/register", register);
 
 /**
  * @route   POST /api/auth/login
  * @desc    Login admin user & return JWT token
  * @access  Public
  */
-router.post("/login", login);
+authRoutes.post("/login", login);
 
-export default router;
+export default authRoutes;
