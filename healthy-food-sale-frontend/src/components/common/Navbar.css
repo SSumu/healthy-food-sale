@@ -1,0 +1,113 @@
+/* Navbar container */
+.navbar {
+  background-color: #16a34a; /* green */
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Inner container */
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* Desktop menu */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Links */
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #fde047; /* yellow */
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login {
+  background: transparent;
+  color: white;
+}
+
+.btn-register {
+  background: white;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.btn-register:hover {
+  background: #fde047;
+  color: black;
+}
+
+.btn-logout {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+}
+
+/* Mobile menu button */
+.menu-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
