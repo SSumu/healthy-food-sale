@@ -1,5 +1,6 @@
 /* Navbar container */
 .navbar {
+  width: 1480px;
   background-color: #16a34a; /* green */
   color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -10,7 +11,7 @@
 
 /* Inner container */
 .navbar-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
   padding: 0 20px;
   height: 60px;
@@ -60,7 +61,7 @@
 }
 
 .btn-register {
-  background: white;
+  background: red;
   color: #16a34a;
   font-weight: 600;
 }

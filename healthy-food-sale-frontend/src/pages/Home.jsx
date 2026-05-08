@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import useFetchProducts from "../hooks/useFetchProducts.js";
-import Navbar from "../components/common/Navbar.jsx";
 import SearchBar from "../components/common/SearchBar.jsx";
 import Loader from "../components/common/Loader.jsx";
 import ProductCard from "../components/user/ProductCard.jsx";
@@ -18,8 +17,6 @@ export default function Home() {
 
   return (
     <div className="home-page">
-      <Navbar />
-
       <header className="hero-section">
         <div className="hero-overlay">
           <h1>Fresh Vegetables & Fruits</h1>
