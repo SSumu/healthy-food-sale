@@ -15,11 +15,23 @@ export default function useFetchProducts() {
 
         const res = await getProducts();
 
+        console.log("Products Response:", res.data);
+
         if (isMounted) {
-          setProducts(res.data || []);
+          // Ensure products is always an array
+          if (Array.isArray(res.data)) {
+            setProducts(res.data);
+          } else if (Array.isArray(res.data.products)) {
+            setProducts(res.data.products);
+          } else {
+            setProducts([]);
+          }
+
           setError("");
         }
       } catch (error) {
+        console.error(error);
+
         if (isMounted) {
           setError(
             error?.response?.data?.message || "Failed to fetch products",
