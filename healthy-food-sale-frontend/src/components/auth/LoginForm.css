@@ -33,7 +33,7 @@
 }
 
 .login-form-group label {
-  margin-bottom: 5px;
+  /* margin-bottom: 1px; */
   font-size: 14px;
   color: #34495e;
 }
