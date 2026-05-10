@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createProduct } from "../../services/productService.js";
+import "./ProductForm.css";
 
 export default function ProductForm({ reload }) {
   const [form, setForm] = useState({ name: "", price: "" });

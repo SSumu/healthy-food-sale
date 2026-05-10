@@ -26,7 +26,7 @@ export default function AdminPanel() {
 
   return (
     <div>
-      <h2>Admin</h2>
+      <h2 style={{ color: "blue" }}>Admin</h2>
       <ProductForm reload={load} />
       <ProductList products={products} reload={load} />
     </div>
