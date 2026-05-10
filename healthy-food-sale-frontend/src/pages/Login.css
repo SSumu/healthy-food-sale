@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #56ab2f, #a8e063);
-  /* padding: 20px; */
 }
 
 /* This wraps the form card (from LoginForm) */
@@ -16,7 +15,7 @@
 
 /* Register link section below form */
 .register-link {
-  margin-bottom: 10px;
+  margin: 20px;
   font-size: 14px;
   color: #555;
   text-align: center;

@@ -21,13 +21,13 @@ export default function LoginForm({ onSubmit, loading, error }) {
 
   return (
     <div className="login-form-container">
-      <h1 className="login-title">Vegetables & Fruits Sale System</h1>
-      <p className="login-subtitle">Admin Login</p>
+      <h1 className="login-form-title">Vegetables & Fruits Sale System</h1>
+      <p className="login-form-subtitle">Admin Login</p>
 
-      {error && <div className="login-error">{error}</div>}
+      {error && <div className="login-form-error">{error}</div>}
 
       <form onSubmit={handleSubmit} className="login-form">
-        <div className="login-group">
+        <div className="login-form-group">
           <label>Email</label>
           <input
             type="email"
@@ -39,7 +39,7 @@ export default function LoginForm({ onSubmit, loading, error }) {
           />
         </div>
 
-        <div className="login-group">
+        <div className="login-form-group">
           <label>Password</label>
           <input
             type="password"
@@ -51,7 +51,7 @@ export default function LoginForm({ onSubmit, loading, error }) {
           />
         </div>
 
-        <button type="submit" className="login-btn" disabled={loading}>
+        <button type="submit" className="login-form-btn" disabled={loading}>
           {loading ? "Logging in..." : "Login"}
         </button>
       </form>
